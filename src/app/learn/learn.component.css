@@ -1,0 +1,18 @@
+h1 {
+    font-weight: bold;
+  }
+  
+  h2 {
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .row {
+    margin-bottom: 3rem;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+  

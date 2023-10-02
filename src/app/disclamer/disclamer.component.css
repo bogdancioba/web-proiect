@@ -1,0 +1,16 @@
+.disclaimer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #b8b8b880;
+    padding: 17px 0;
+    font-size: 17px;
+    text-align: center;
+    color: #000000;
+    border: 1px solid black;
+  }
+  
+  .disclaimer p {
+    margin: 0;
+  }
+  

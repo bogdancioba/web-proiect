@@ -1,0 +1,52 @@
+<head>
+</head>
+
+<div class="container mt-5">
+  <div class="row">
+    <div class="col">
+      <h1>Buy Stocks</h1>
+    </div>
+  </div>
+
+  <div class="row mt-4">
+    <div class="col-lg-8">
+      <h2>Price Chart</h2>
+      <canvas #priceChart style="width: 100%; height: 400px; background-color: #fdfdfd;"></canvas>
+    </div>
+    <div class="col-lg-4">
+      <h2>Stocks</h2>
+      <ul class="list-group">
+        <li class="list-group-item">Apple (AAPL)</li>
+        <li class="list-group-item">Tesla (TSLA)</li>
+        <li class="list-group-item">Amazon (AMZN)</li>
+        <li class="list-group-item">Google (GOOGL)</li>
+        <li class="list-group-item">Microsoft (MSFT)</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="row mt-5">
+    <div class="col-lg-6">
+      <h2>Purchase</h2>
+      <form>
+        <div class="mb-3">
+          <label for="stock" class="form-label">Stock</label>
+          <select class="form-select" id="stock">
+            <option>Apple (AAPL)</option>
+            <option>Tesla (TSLA)</option>
+            <option>Amazon (AMZN)</option>
+            <option>Google (GOOGL)</option>
+            <option>Microsoft (MSFT)</option>
+          </select>
+        </div>
+        <div class="mb-3">
+          <label for="amount" class="form-label">Amount</label>
+          <input type="number" class="form-control" id="amount" placeholder="Enter amount">
+        </div>
+        <button type="submit" class="btn btn-primary">Buy Now</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="container mt-5"></div>

@@ -1,0 +1,79 @@
+<div class="container mt-5">
+    <div class="row">
+      <div class="col">
+        <h1>Dashboard</h1>
+      </div>
+    </div>
+  
+    <div class="row mt-4">
+      <div class="col">
+        <h2>Portfolio Performance</h2>
+        <canvas #priceChart style="width: 100%; height: 400px; background-color: #f5f5f5;"></canvas>
+      </div>
+    </div>
+  
+    <div class="row mt-4">
+      <div class="col">
+        <h2>Stocks</h2>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Stock</th>
+              <th>Value</th>
+              <th>Initial Value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Apple</td>
+              <td [ngStyle]="{ color: getStockValueColor('AAPL') }">{{ getStockValue('AAPL') }}</td>
+              <td>{{ initialStockValues['AAPL'] }}</td>
+            </tr>
+            <tr>
+              <td>Tesla</td>
+              <td [ngStyle]="{ color: getStockValueColor('TSLA') }">{{ getStockValue('TSLA') }}</td>
+              <td>{{ initialStockValues['TSLA'] }}</td>
+            </tr>
+            <tr>
+              <td>Google&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+              <td [ngStyle]="{ color: getStockValueColor('GOOGL') }">{{ getStockValue('GOOGL') }}</td>
+              <td>{{ initialStockValues['GOOGL'] }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  
+    <div class="row mt-4">
+      <div class="col">
+        <h2>Crypto</h2>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Crypto</th>
+              <th>Value</th>
+              <th>Initial Value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Bitcoin</td>
+              <td [ngStyle]="{ color: getStockValueColor('BCN') }">{{ getStockValue('BCN') }}</td>
+              <td>{{ initialStockValues['BCN'] }}</td>
+            </tr>
+            <tr>
+              <td>Etherum</td>
+              <td [ngStyle]="{ color: getStockValueColor('ETH') }">{{ getStockValue('ETH') }}</td>
+              <td>{{ initialStockValues['ETH'] }}</td>
+            </tr>
+            <tr>
+              <td>DodgeCoin</td>
+              <td [ngStyle]="{ color: getStockValueColor('DOG') }">{{ getStockValue('DOG') }}</td>
+              <td>{{ initialStockValues['DOG'] }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  
